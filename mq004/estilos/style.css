@@ -10,15 +10,39 @@
     box-sizing: border-box;
 }
 
-body, html {
-    width: 100vw;
+body {
     height: 100vh;
 }
 
 body {
     background: black url(../imagens/back-phone.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 main {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.514);
+    width: 70vw;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 15px;
+    padding: 15px;
 }
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    font-size: 1em;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+img#phone {display: block;} /* APARECER IMAGEM */
+img#tablete {display: none;} /* SUMIR COM IMAGEM */
+img#print {display: none;} /* SUMIR COM IMAGEM */
+img#pc {display: none;} /* SUMIR COM IMAGEM */
+img#tv {display: none;} /* SUMIR COM IMAGEM */
