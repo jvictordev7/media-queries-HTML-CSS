@@ -4,45 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Jornada de João Victor</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>A Jornada de João Victor</h1>
-        <menu>
+        <span id="burger" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
-                <li><a href="#">Opção 1</a></li>
-                <li><a href="#">Opção 2</a></li>
-                <li><a href="#">Opção 3</a></li>
-                <li><a href="#">Opção 4</a></li>
-                <li><a href="#">Opção 5</a></li>
+                <li><a href="#">Cortador</a></li>
+                <li><a href="#">Auxiliar de serigrafia</a></li>
+                <li><a href="#">Impressor serigráfico</a></li>
+                <li><a href="#">Auxiliar de Costura</a></li>
+                <li><a href="#">Costureiro</a></li>
+                <li><a href="#">Desgner</a></li>
             </ul>
         </menu>
     </header>
     <main>
         <article>
-            <h2>Designer a Desenvolvedor Front-End</h2>
-            <p>Introdução:
-                <strong>João Victor</strong> é um profissional que sempre buscou desafios e oportunidades de crescimento em sua carreira. Com uma trajetória de quatro anos como designer, ele decidiu expandir seus horizontes e mergulhar no universo da programação, especificamente como desenvolvedor front-end. Sua jornada de transição profissional o levou à Universidade <a href="https://unilavras.edu.br/" target="_blank">Unilavras</a>, em Minas Gerais, onde está cursando Análise e Desenvolvimento de Sistemas (ADS).</p>
+            <h2>Uma Jornada de Trabalho e Aprendizado</h2><br>
 
-            <p>O Início da Carreira:
-                Após concluir sua formação em Design, <strong>João Victor</strong> ingressou no mercado de trabalho como designer. Durante seus quatro anos nessa área, ele desenvolveu habilidades sólidas em design gráfico, user experience em CorelDRAW e Photoshop, contribuindo para projetos criativos e impactantes.</p>
+            <p>
+                Permita-me compartilhar um breve relato sobre minha jornada profissional, marcada por um comprometimento inabalável, aprendizado contínuo e uma paixão incansável pelo avanço na área da tecnologia.
+            </p>
 
-            <p>A Busca por Novos Desafios:
-                Sentindo a necessidade de expandir seus conhecimentos e acompanhar as demandas do mercado de tecnologia, João Victor decidiu iniciar sua jornada rumo ao desenvolvimento front-end. Fascinado pela ideia de dar vida às interfaces digitais que ele costumava projetar, ele embarcou em uma missão de aprendizado autodidata.</p>
+            <p>Desde tenra idade, fui introduzido ao mundo do trabalho, desempenhando funções diversas que moldaram meu caráter e inculcaram em mim valores como responsabilidade e dedicação. Iniciei minha trajetória como ajudante do leiteiro aos 13 anos, uma experiência que me ensinou a importância da disciplina e da pontualidade.</p>
 
-            <p>O Caminho para a Universidade Unilavras:
-                Consciente da importância de uma base sólida em programação e tecnologia da informação, João Victor optou por se matricular no curso de Análise e Desenvolvimento de Sistemas na Universidade Unilavras, em Minas Gerais. A reputação da instituição e a qualidade do programa de estudos foram fatores determinantes em sua escolha.</p>
+            <p>Aos 15 anos, ingressei em uma fábrica de confecção de uniformes, onde adquiri uma gama variada de habilidades ao longo dos anos. Começando como cortador de tecidos, evolui para funções mais especializadas, como serigrafia, impressão e costura, demonstrando versatilidade e adaptabilidade em um ambiente industrial dinâmico.</p>
 
-                                <p>Desafios e Conquistas na Universidade:
-                                    A vida universitária trouxe consigo uma série de desafios e oportunidades de crescimento para João Victor. Adaptar-se à rotina de estudante enquanto concilia o trabalho e os estudos tem sido um verdadeiro teste de organização e determinação. No entanto, cada disciplina cursada e projeto desenvolvido tem contribuído para expandir seu conhecimento e aprimorar suas habilidades técnicas.</p>
+            <p>Atualmente, busco expandir meus conhecimentos e habilidades através do curso de Análise e Desenvolvimento de Sistemas na Universidade <a href="https://unilavras.edu.br/" target="_blank">Unilavras</a>. Paralelamente, estou empenhado em aprender e dominar linguagens fundamentais no desenvolvimento web, como <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> e <strong>React</strong>. Essa jornada de aprendizado reflete meu compromisso em acompanhar as tendências tecnológicas e me manter atualizado no campo da programação.</p>
 
-                                    <p>O Futuro como Desenvolvedor Front-End:
-                                        Com sua formação em ADS em andamento, João Victor vislumbra um futuro promissor como desenvolvedor front-end. Ele está determinado a combinar sua expertise em design com seus novos conhecimentos em programação para criar experiências digitais inovadoras e impactantes. Seu objetivo é não apenas acompanhar, mas também liderar as tendências do mercado digital.</p>
+            <p>Estou confiante de que minha experiência prática, aliada à minha formação acadêmica em constante evolução e ao meu interesse em tecnologias emergentes, me capacitam a contribuir de forma significativa em projetos desafiadores e inovadores. Estou ansioso para aplicar meus conhecimentos e habilidades em novos desafios e contribuir para o crescimento e sucesso de uma organização que valorize o talento e o empenho de seus colaboradores.</p>
 
-                                    <p>O Futuro como Desenvolvedor Front-End:
-                                        Com sua formação em ADS em andamento, João Victor vislumbra um futuro promissor como desenvolvedor front-end. Ele está determinado a combinar sua expertise em design com seus novos conhecimentos em programação para criar experiências digitais inovadoras e impactantes. Seu objetivo é não apenas acompanhar, mas também liderar as tendências do mercado digital.</p>
+            <p>Agradeço a oportunidade de compartilhar minha história e espero ansiosamente pela possibilidade de contribuir para os objetivos e metas de sua empresa.</p>
+
+            <p>Atenciosamente,</p>
+            <p>João Victor</p>
+            
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display =='block') {
+                itens.style.display = 'none'
+            }
+            else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
